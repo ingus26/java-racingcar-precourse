@@ -5,7 +5,7 @@ import java.util.List;
 
 public class RacingCarGame {
 
-    final List<Car> cars;
+    private List<Car> cars;
 
     public RacingCarGame() {
         cars = new ArrayList<>();
@@ -18,6 +18,7 @@ public class RacingCarGame {
     private void start() {
         Player player = new Player();
         setCars(player);
+        player.setRaceCount();
     }
 
     private void setCars(Player player) {

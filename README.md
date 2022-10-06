@@ -16,14 +16,14 @@
             - 출력 예시) [ERROR] 자동차 이름은 5자 이하 까지 가능 하다.
     - [x] 에러가 발생한 그 부분부터 입력을 다시 받는다.
 2. 사용자에게 경주 시도 횟수, 이하 게임 회차를 입력 받는 다.
-    - [ ] 아래와 같이 입력 받는다.
+    - [x] 아래와 같이 입력 받는다.
         - 출력 예시) 시도할 횟수는 몇회인가요?
             - 5
-    - [ ] 사용자가 잘못된 값을 입력할 경우 IllegalArgumentException를 발생시킨다.
-        - [ ] Exception이 아닌 IllegalArgumentException, IllegalStateException 등과 같은 명확한 유형을 처리한다.
-        - [ ] [ERROR]로 시작하는 에러 메시지를 출력 한다.
+    - [x] 사용자가 잘못된 값을 입력할 경우 IllegalArgumentException를 발생시킨다.
+        - [x] Exception이 아닌 IllegalArgumentException, IllegalStateException 등과 같은 명확한 유형을 처리한다.
+        - [x] [ERROR]로 시작하는 에러 메시지를 출력 한다.
             - 출력 예시) [ERROR] 시도 횟수는 숫자여야 한다.
-    - [ ] 에러가 발생한 그 부분부터 입력을 다시 받는다.
+    - [x] 에러가 발생한 그 부분부터 입력을 다시 받는다.
 3. 자동차 기능 구현
     - [ ] 사용자에게 입력 받은 자동차 이름 수 만큼 자동차를 생성한다.
     - [ ] 사용자가 입력한 게임 회차만큼 자동차들이 경주한다.
