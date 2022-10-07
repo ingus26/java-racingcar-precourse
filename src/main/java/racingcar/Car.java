@@ -27,6 +27,14 @@ public class Car {
         return this.moveCount;
     }
 
+    protected String getRaceStatus() {
+        StringBuilder status = new StringBuilder();
+        for (int i = 0; i < moveCount; i++) {
+            status.append(Config.MOVE_DISPLAY);
+        }
+        return status.toString();
+    }
+    
     private boolean sizeValidation(String name) {
         if (name.length() > Config.MAX_NAME_SIZE) {
             throw new IllegalArgumentException(ExceptionMessage.CAR_NAME_MAX_SIZE.getMessage());

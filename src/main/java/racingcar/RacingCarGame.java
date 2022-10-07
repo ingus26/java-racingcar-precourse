@@ -24,9 +24,24 @@ public class RacingCarGame {
     private void setCars(Player player) {
         try {
             player.setCarNames();
+            setCar(player.getCarNames());
+            sizeValidation();
         } catch (Exception e) {
             System.out.println(e.getMessage());
             setCars(player);
+        }
+    }
+
+    private void setCar(String[] carNames) {
+        cars = new ArrayList<>();
+        for (String carName : carNames) {
+            cars.add(new Car(carName.trim()));
+        }
+    }
+
+    private void sizeValidation() {
+        if (cars.size() == 0) {
+            throw new IllegalArgumentException(ExceptionMessage.CAR_NAME_EMPTY.getMessage());
         }
     }
 
