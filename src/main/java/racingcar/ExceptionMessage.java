@@ -12,7 +12,9 @@ public enum ExceptionMessage {
 
     GAME_COUNT_NEGATIVE("시도 횟수를 음수로 입력할 수 없습니다."),
 
-    GAME_COUNT_NOT_NUMBER("시도 횟수를 숫자로 입력 해주세요.");
+    GAME_COUNT_NOT_NUMBER("시도 횟수를 숫자로 입력 해주세요."),
+
+    CAR_MOVE_COUNT("자동차는 0에서 9까지의 값으로만 이동할 수 있습니다.");
 
     private final String MESSAGE;
 

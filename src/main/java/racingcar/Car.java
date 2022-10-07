@@ -27,6 +27,14 @@ public class Car {
         return this.moveCount;
     }
 
+    protected void move(int num) {
+        numberValidation(num);
+
+        if (num >= Config.MOVE) {
+            setMoveCount();
+        }
+    }
+
     protected String getRaceStatus() {
         StringBuilder status = new StringBuilder();
         for (int i = 0; i < moveCount; i++) {
@@ -34,7 +42,13 @@ public class Car {
         }
         return status.toString();
     }
-    
+
+    private void numberValidation(int number) {
+        if (number < Config.START_NUM || number > Config.END_NUM) {
+            throw new IllegalArgumentException(ExceptionMessage.CAR_MOVE_COUNT.getMessage());
+        }
+    }
+
     private boolean sizeValidation(String name) {
         if (name.length() > Config.MAX_NAME_SIZE) {
             throw new IllegalArgumentException(ExceptionMessage.CAR_NAME_MAX_SIZE.getMessage());

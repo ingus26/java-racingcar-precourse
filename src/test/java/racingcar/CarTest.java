@@ -32,14 +32,14 @@ class CarTest {
     @Test
     void 전진() {
         Car car = new Car("car1");
-        car.racing(5);
+        car.move(5);
         assertEquals("-", car.getRaceStatus());
     }
 
     @Test
     void 멈춤() {
         Car car = new Car("car1");
-        car.racing(3);
+        car.move(3);
         assertEquals("", car.getRaceStatus());
     }
 

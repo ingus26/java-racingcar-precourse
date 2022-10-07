@@ -1,5 +1,7 @@
 package racingcar;
 
+import static camp.nextstep.edu.missionutils.Randoms.pickNumberInRange;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class RacingCarGame {
         Player player = new Player();
         setCars(player);
         player.setRaceCount();
+        racing(player.getRaceCount());
     }
 
     private void setCars(Player player) {
@@ -37,6 +40,23 @@ public class RacingCarGame {
         for (String carName : carNames) {
             cars.add(new Car(carName.trim()));
         }
+    }
+
+    private void racing(int raceCount) {
+        System.out.println(Message.RESULT.getMessage());
+        for (int i = 0; i < raceCount; i++) {
+            racingRoundCar();
+            racingRoundResult();
+        }
+    }
+
+    private void racingRoundCar() {
+        cars.forEach(car -> car.move(pickNumberInRange(Config.START_NUM, Config.END_NUM)));
+    }
+
+    private void racingRoundResult() {
+        cars.forEach(car -> System.out.printf("%s : %s\n", car.name, car.getRaceStatus()));
+        System.out.println(" ");
     }
 
     private void sizeValidation() {
