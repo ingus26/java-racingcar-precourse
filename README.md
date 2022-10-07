@@ -49,22 +49,22 @@
 
 ## 프로그래밍 요구사항
 
-1. [ ] racinggame.ApplicationTest에 있는 2개의 Test Case가 성공해야 한다.
-2. [ ] 도메인 로직에 단위 테스트를 구현해야 한다.
-3. [ ] indent(인덴트, 들여쓰기) depth 1까지 허용 한다.
-4. [ ] 자바 8에 추가된 stream api를 사용하지 않고 구현해야 한다. 단, 람다는 사용 가능하다.
-5. [ ] else 예약어를 쓰지 않는다.
-6. [ ] 함수(또는 메소드)의 길이가 10라인을 넘어가지 않도록 구현한다.
-7. [ ] 일급콜렉션을 활용해 구현한다.
-8. [ ] 모든 원시값과 문자열을 포장한다.
+1. [x] racinggame.ApplicationTest에 있는 2개의 Test Case가 성공해야 한다.
+2. [x] 도메인 로직에 단위 테스트를 구현해야 한다.
+3. [x] indent(인덴트, 들여쓰기) depth 1까지 허용 한다.
+4. [x] 자바 8에 추가된 stream api를 사용하지 않고 구현해야 한다. 단, 람다는 사용 가능하다.
+5. [x] else 예약어를 쓰지 않는다.
+6. [x] 함수(또는 메소드)의 길이가 10라인을 넘어가지 않도록 구현한다.
+7. [x] 일급콜렉션을 활용해 구현한다.
+8. [x] 모든 원시값과 문자열을 포장한다.
 
 ## 제약 사항
 
-1. [ ] JDK 8 버전 사용
-2. [ ] camp.nextstep.edu.missionutils에서 제공하는 Randoms 및 Console API를 사용하여 구현
+1. [x] JDK 8 버전 사용
+2. [x] camp.nextstep.edu.missionutils에서 제공하는 Randoms 및 Console API를 사용하여 구현
     - Random 값 추출은 camp.nextstep.edu.missionutils.Randoms의 pickNumberInRange()를 활용
     - 사용자가 입력하는 값은 camp.nextstep.edu.missionutils.Console의 readLine()을 활용
-3. [ ] 코드컨벤션 : https://github.com/woowacourse/woowacourse-docs/tree/master/styleguide/java
+3. [x] 코드컨벤션 : https://github.com/woowacourse/woowacourse-docs/tree/master/styleguide/java
 
 ## 과제 제출 과정
 
